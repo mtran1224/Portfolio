@@ -1,0 +1,748 @@
+@font-face {
+  font-family: 'CaviarDreams';
+  src: url(../fonts/CaviarDreams.ttf); }
+
+@font-face {
+  font-family: 'CaviarDreams_Italic';
+  src: url(../fonts/CaviarDreams_Italic.ttf); }
+
+@font-face {
+  font-family: 'CaviarDreams_Bold';
+  src: url(../fonts/CaviarDreams_Bold.ttf); }
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "CaviarDreams";
+}
+
+.site-container {
+  width: 1115px;
+  margin: 0 auto; 
+}
+@media (max-width: 1250px) {
+.site-container {
+  width: 90%; 
+  } 
+}
+
+.universal-h2 {
+  font-size: 48px;
+  text-align: center;
+  color: #222; 
+}
+@media (max-width: 1250px) {
+	.universal-h2 {
+	font-size: 38px; 
+	} 
+}
+@media (max-width: 668px) {
+.universal-h2 {
+  font-size: 30px; 
+  } 
+}
+
+/* NAVGIVATION BAR */
+/* backgroound of nav bar */
+.top-nav {
+  position: relative;
+  overflow: hidden; 
+}
+
+/* links within the nav bar */
+.top-nav a{
+  float: right;
+  color:#000000;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+/* hover style for nav bar */
+.top-nav a:hover {
+  background-color: #8FBC8F; opacity: 0.6;
+  color: black;
+}
+
+/* TOP PANNEL */
+.top-banner{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+/* White space */
+.top-banner::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.9;
+}
+
+.top-banner .site-container{
+  position: relative;
+  z-index: 1;
+
+}
+
+@media (max-width: 1600px)
+{
+  .top-banner{
+    padding-top: 180px;
+  }
+}
+@media (max-width: 1250px)
+{
+  .top-banner{
+    padding-top: 130px;
+  }
+}
+@media (max-width: 520px)
+{
+  .top-banner{
+    padding-top: 105px;
+  }
+}
+@media (max-width: 1600px)
+{
+  .top-banner{
+    min-height: 100vh;
+  }
+}
+
+.top-banner-inner{
+  display: flex;
+  align-items: center;
+}
+.top-banner-inner .top-banner-text{
+  margin-left: 54px;
+}
+@media(max-width: 1250px){
+  .top-banner-inner .top-banner-text{
+    width: 35%;
+  }
+}
+@media(max-width: 768px){
+  .top-banner-inner .top-banner-text{
+    width: 50%;
+    margin-left: 20px;
+  }
+}
+@media(max-width: 520px){
+  .top-banner-inner .top-banner-text{
+    width: 65%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+}
+
+.top-banner-inner .top-banner-text p{
+  margin-bottom:  42px;
+  color: #777;
+}
+@media(max-width: 768px){
+  .top-banner-inner .top-banner-text p{
+    margin-bottom: 25px;
+    font-size: 14px;
+  }
+}
+
+.top-banner-inner .top-banner-h2{
+  font-size: 74px;
+  letter-spacing: 3px;
+  color: #fff;
+  font-family: "CaviarDreams_Bold"; 
+}
+@media (max-width: 1250px) {
+  .top-banner-inner .top-banner-h2 {
+    font-size: 50px; 
+    } 
+  }
+@media (max-width: 768px) {
+  .top-banner-inner .top-banner-h2 {
+    font-size: 35px; 
+    } 
+  }
+.top-banner-inner .top-banner-text-top .top-banner-h2 {
+  margin-top: 15px; 
+}
+@media (max-width: 768px) {
+  .top-banner-inner .top-banner-text-top .top-banner-h2 {
+    margin-top: 0; 
+  } 
+}
+.top-banner-inner .top-banner-text-bottom {
+  margin-bottom: 20px;
+  padding-left: 27%; 
+}
+.top-banner-inner .top-banner-text-bottom .top-banner-h2 {
+  margin-bottom: 10px; 
+}
+@media (max-width: 768px) {
+  .top-banner-inner .top-banner-text-bottom .top-banner-h2 {
+  margin-bottom: 0; 
+  } 
+}
+.top-banner-inner .top-banner-image {
+  font-size: 0; 
+}
+@media (max-width: 1250px) {
+	.top-banner-inner .top-banner-image {
+	  width: 50%; 
+	  }
+}
+.top-banner-inner .top-banner-image img {
+    width: 100%; 
+    }
+@media (max-width: 520px) {
+  .top-banner-inner .top-banner-image {
+    width: 65%;
+    margin-bottom: 20px; 
+    } 
+  }
+@media (max-width: 520px) {
+.top-banner-inner {
+  flex-direction: column; 
+  } 
+}
+.span-brand {
+  font-size: 14px;
+  color: #fff; }
+
+
+
+
+/* ABOUT ME */
+
+.about-me{
+  position: relative;
+  margin: 193px 0 199px;
+}
+@media(max-width: 1250px){
+  .about-me{
+    margin: 150px 0;
+  }
+}
+@media(max-width: 922px){
+  .about-me{
+    margin: 125px 0;
+  }
+}
+
+.about-me-background{
+  position: absolute;
+  background-image: url("../images/background2.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  top: -75px;
+  right: 0;
+  height: calc(100% + 150px);
+  width: 70%;
+  z-index: -1; 
+}
+.about-me-background:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7; 
+}
+@media (max-width: 992px){
+  .about-me-background {
+    width: 100%;
+    padding-bottom: 15px; 
+    } 
+  }
+.about-me-inner {
+  display: flex;
+  justify-content: space-between; }
+@media (max-width: 992px){
+  .about-me-inner {
+    flex-direction: column;
+    align-items: center; 
+    }
+  }
+
+.image-container {
+  width: 390px;
+  padding: 8px;
+  text-align: center;
+  background-color: #fff; 
+}
+.image-container .image-image {
+  font-size: 0; 
+}
+.image-container .image-image img {
+  width: 100%; 
+}
+.image-container .about-me-bottom {
+  padding: 35px 0 95px;
+  background-color: #f5f5f5; 
+}
+@media (max-width: 992px) {
+  .image-container .about-me-bottom {
+    padding: 25px 0; 
+    } 
+  }
+.image-container .about-me-name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 23px; 
+}
+@media (max-width: 992px) {
+  .image-container .about-me-name {
+    margin-bottom: 10px; 
+    } 
+  }
+.image-container .about-me-name span {
+  font-size: 90px;
+  line-height: 75px;
+  color: #8FBC8F;
+  font-family: "CaviarDreams_Bold"; 
+}
+@media (max-width: 992px) {
+  .image-container .about-me-name span {
+    font-size: 65px;
+    line-height: 62px; 
+    } 
+  }
+.image-container p {
+  padding: 0 10%;
+  line-height: 25px;
+  font-style: italic;
+  color: #777; 
+}
+@media (max-width: 620px) {
+  .image-container p {
+    font-size: 15px;
+    line-height: 20px; 
+    } 
+  }
+@media (max-width: 992px) {
+  .image-container {
+    margin-bottom: 20px; 
+    } 
+  }
+@media (max-width: 620px) {
+  .image-container {
+    width: 250px; 
+    } 
+  }
+
+.about-me-text {
+  width: 44%;
+  margin-right: 80px;
+  text-align: center; 
+}
+.about-me-text .universal-h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 25px; 
+}
+.about-me-text p {
+  margin-bottom: 35px;
+  line-height: 24px;
+  color: #8FBC8F; 
+}
+.about-me-text p span {
+  font-size: 48px;
+  color: #fff; 
+}
+@media (max-width: 620px) {
+  .about-me-text p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px; 
+    } 
+  }
+@media (max-width: 1250px) {
+  .about-me-text {
+    width: 48%;
+    margin-right: 40px; 
+    } 
+  }
+@media (max-width: 992px) {
+  .about-me-text {
+    width: 100%;
+    margin-right: 0; 
+    } 
+  }
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  padding-top: 120px;
+  background-color: #343434; 
+}
+
+@media (max-width: 1250px) {
+  .footer {
+    padding-top: 60px; 
+    } 
+  }
+.footer-inner{
+	display: flex;
+  	justify-content: space-between;
+  	padding-bottom: 95px;
+}
+.footer-inner h5 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff; 
+}
+
+ @media (max-width: 1250px) {
+    .footer-inner {
+      padding-bottom: 50px;
+      flex-direction: column;
+      align-items: center; 
+      } 
+ 	}
+.footer-info {
+  width: 50%;
+  display: flex; 
+}
+
+.footer-info .footer-right p {
+  margin-bottom: 15px;
+  color: #aaa; 
+}
+.footer-info .footer-right .footer-phone {
+  font-size: 14px; 
+}
+.footer-info .footer-right .social-icons {
+  margin-top: 27px;
+}
+
+.footer-info .footer-right .social-icons a {
+padding: 9px 19px; 
+}
+
+
+@media (max-width: 1250px) {
+  .footer-info {
+    width: 100%;
+    margin-bottom: 20px; 
+    } 
+}
+@media (max-width: 620px) {
+  .footer-info {
+    flex-direction: column;
+    align-items: center; 
+    } 
+}
+
+.footer-contact-form {
+	width: 50%; 
+}
+.footer-contact-form .contact-form-input {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px; 
+}
+.footer-contact-form .contact-form-input input {
+	width: 40%;
+	padding: 20px;
+	border: 1px solid #404040;
+	background-color: #282828;
+	color: #8FBC8F; 
+}
+.footer-contact-form .contact-form-input input::placeholder {
+	color: #aaa; 
+}
+
+@media (max-width: 1250px) {
+	.footer-contact-form .contact-form-input input {
+	  width: 45%; 
+	  } 
+	}
+@media (max-width: 520px) {
+.footer-contact-form .contact-form-input input {
+  width: 100%; 
+  } 
+}
+
+.footer-contact-form textarea::placeholder{
+	color: #aaa;
+}
+
+.footer-contact-form textarea {
+	box-sizing: border-box;
+	height: 90px;
+	width: 100%;
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #404040;
+	background-color: #282828;
+	resize: none;
+	color: #8FBC8F; 
+}
+.footer-contact-form .submit-button {
+	padding: 19px 50px;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #fff;
+	background-color: #8FBC8F;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: 0.3s ease; 
+}
+.footer-contact-form .submit-button:hover {
+  background-color: #777; 
+}
+@media (max-width: 1250px) {
+	.footer-contact-form {
+	  width: 100%; 
+	  } 
+	}
+
+.footer-bottom {
+  padding: 25px 0;
+  }
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between; 
+}
+.footer-bottom-inner p {
+  color: #777; 
+}
+
+
+/*About Page*/
+
+
+ /* FIX THIS SECTION */
+
+.about-inner-container{
+
+  margin-top: 9%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;  
+
+}
+
+.about-inner .universal-h2{
+  font-family: "CaviarDreams"; 
+  line-height: 75px;
+  color: #000000;
+}
+
+.about-inner .universal-h2 span{
+  font-family: "CaviarDreams_Bold"; 
+  color: #8FBC8F;
+}
+
+.about-inner-container p{
+  font-family: "CaviarDreams";
+  font-size: 18px;
+  text-align: center;
+}
+
+.about-inner-container .button {
+  margin-top: 9%;
+  margin-left: 40%;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #A9A9A9;
+  border: 1px solid #8FBC8F;
+  transition: 0.3s ease; 
+}
+
+.button:hover, .button:focus {
+  color: #8FBC8F; }
+
+
+/*Projects Page*/
+@media (max-width: 1600px)
+{
+  .project{
+    padding-top: 180px;
+  }
+}
+@media (max-width: 1250px)
+{
+  .project{
+    padding-top: 130px;
+  }
+}
+@media (max-width: 520px)
+{
+  .project{
+    padding-top: 105px;
+  }
+}
+@media (max-width: 1600px)
+{
+  .project{
+    min-height: 100vh;
+  }
+}
+
+.project-background{
+  position: absolute;
+  background-image: url("../images/about1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  top: 49px;
+  right: 0;
+  height: calc(100% + 150px);
+  width: 70%;
+  z-index: -1; 
+}
+.project-background:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5; 
+}
+@media (max-width: 992px){
+  .project-background {
+    width: 100%;
+    padding-bottom: 15px; 
+    } 
+  }
+
+
+.project-inner {
+  display: flex;
+  justify-content: space-between; }
+@media (max-width: 992px){
+  .project-inner {
+    flex-direction: column;
+    align-items: center; 
+    }
+  }
+
+.project-container {
+  width: 390px;
+  padding: 8px;
+  text-align: center;
+  background-color: #fff; 
+}
+.project-container .project-image{
+  font-size: 0; 
+}
+.project-container .project-image img {
+  width: 100%; 
+}
+.project-container .project-bottom {
+  padding: 35px 0 95px;
+  background-color: #fff; 
+}
+.project-container .project-bottom a {
+  font-family: 'CaviarDreams'; 
+  color: #8FBC8F
+}
+@media (max-width: 992px) {
+  .project-container .project-bottom {
+    padding: 25px 0; 
+    } 
+  }
+.project-container .project-name {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 23px; 
+}
+
+@media (max-width: 992px) {
+  .project-container .project-name {
+    margin-bottom: 10px; 
+    } 
+  }
+
+.project-container .project-name span {
+  font-size: 90px;
+  line-height: 75px;
+  color: #8FBC8F;
+  font-family: "CaviarDreams_Bold"; 
+}
+
+@media (max-width: 992px) {
+  .project-container .project-name span {
+    font-size: 65px;
+    line-height: 62px; 
+    } 
+  }
+
+@media (max-width: 992px) {
+  .project-container {
+    margin-bottom: 20px; 
+    } 
+  }
+@media (max-width: 620px) {
+  .project-container {
+    width: 250px; 
+    } 
+  }
+
+.project-text {
+  width: 44%;
+  margin-right: 80px;
+  text-align: center; 
+}
+.project-text .universal-h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  margin-bottom: 25px; 
+}
+.project-text p {
+  margin-bottom: 35px;
+  line-height: 24px;
+  color: #8FBC8F; 
+}
+.project-text p span {
+  font-size: 30px;
+  color: #fff; 
+}
+@media (max-width: 620px) {
+  .project-text p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px; 
+    } 
+  }
+@media (max-width: 1250px) {
+  .project-text {
+    width: 48%;
+    margin-right: 40px; 
+    } 
+  }
+@media (max-width: 992px) {
+  .project-text {
+    width: 100%;
+    margin-right: 0; 
+    } 
+  }
+
